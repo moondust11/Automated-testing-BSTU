@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# MY FILES
+*.sln
+*.config
+Properties
+!*.cs
+!*.csproj
+
 # User-specific files
 *.suo
 *.user
