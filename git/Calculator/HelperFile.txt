@@ -1,2 +1,3 @@
 This is just a manual of how to use this app.
 
+Use the template to enter data: {first number}[spacebars]{sign}[spacebars]{second number}[spacebars]{=}.
