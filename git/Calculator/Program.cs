@@ -10,8 +10,8 @@ namespace Calc
     {
         public static class Error
         {
-            public const string ErrIncorrectInput = "Error! Incorrect input.";
-            public const string ErrIncorrectResult = "Error! Incorrect result.";
+            public const string ErrIncorrectInput = "Error! Incorrect input value.";
+            public const string ErrIncorrectResult = "Error! Incorrect result value.";
 
             public static bool ErrFlag { get; private set; }
             public static string ErrMessage { get; private set; }
