@@ -3,6 +3,7 @@ using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
 
 namespace wd
 {
@@ -58,7 +59,9 @@ namespace wd
             searchButton.Click();
 
             // Finding information by the system
-            Thread.Sleep(10000);
+            var wait = new WebDriverWait(_firefox, TimeSpan.FromSeconds(60));
+            wait.Until(ExpectedConditions.UrlContains("search/results"));
+            Thread.Sleep(1000);
 
             var depCityLi = _firefox.FindElement(By.XPath("//*[@id=\"offers_table\"]/section[1]/div[1]/ul/li/label/span/span/ul[2]/li[3]"));
             var depCityLiSpan = _firefox.FindElement(By.XPath("//*[@id=\"offers_table\"]/section[1]/div[1]/ul/li/label/span/span/ul[2]/li[3]/span[1]"));
@@ -68,8 +71,8 @@ namespace wd
             var arrCityLiSpan = _firefox.FindElement(By.XPath("//*[@id=\"offers_table\"]/section[1]/div[1]/ul/li/label/span/span/ul[4]/li[3]/span[1]"));
             string arrCity = arrCityLi.Text.Replace(" " + arrCityLiSpan.Text, "");
 
-            Assert.AreEqual(depCityConst, depCity);
-            Assert.AreEqual(arrCityConst, arrCity);
+            Assert.AreEqual(depCityConst, depCity, message: "Departure city is not equal to 'Минск'");
+            Assert.AreEqual(arrCityConst, arrCity, message: "Arrival city is not equal to 'Тбилиси'");
 
             Thread.Sleep(5000);
         }
