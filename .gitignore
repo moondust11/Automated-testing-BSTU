@@ -11,7 +11,6 @@ CI/packages
 CI/TestResults
 !CI/Jenkins/packages.config
 !CI/F.Steps1-2.sln
-!CI/.vs/
 !*.cs
 !*.csproj
 !geckodriver.exe
