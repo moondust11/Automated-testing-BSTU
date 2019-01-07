@@ -10,7 +10,7 @@ Properties
 !CI/F.Steps1-2/Properties
 packages
 TestResults
-!CI/Jenkins/packages.config
+!CI/F.Steps1-2/packages.config
 !CI/F.Steps1-2.sln
 !*.cs
 !*.csproj
