@@ -7,9 +7,14 @@
 *.sln
 *.config
 Properties
+CI/packages
+CI/TestResults
+!CI/Jenkins/packages.config
+!CI/F.Steps1-2.sln
+!CI/.vs/
 !*.cs
 !*.csproj
-!DriverBinaries/geckodriver.exe
+!geckodriver.exe
 
 
 # User-specific files
