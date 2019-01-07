@@ -9,6 +9,8 @@
 Properties
 !*.cs
 !*.csproj
+!DriverBinaries/geckodriver.exe
+
 
 # User-specific files
 *.suo
