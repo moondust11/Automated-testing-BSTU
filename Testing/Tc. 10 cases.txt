@@ -1,0 +1,128 @@
+1) 
+Priority: high.
+Title: correct searching of flights with option 'Exact date'.
+Steps: 
+	1. set departure and arrival cities;
+	2. set additional find options near the dates to 'Exact date' value;
+	3. press search button;
+	4. wait for result page is loaded;
+	5. get dates from first flight;
+	6. check results.
+
+Expected results: gotten dates from step 5 are correct.
+
+2)
+Priority: high.
+Title: finding flights with correct source and destination cities.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. get departure and arrival cities from first flight;
+	5. check results.
+
+Expected results: gotten cities from step 4 are correct.
+
+3)
+Priority: medium.
+Title: correct displaying of data, sorted by option 'Number on transfers' set in 'Direct flight'.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. check for transfers existing within first flight;
+	5. check results.
+
+Expected results: transfer from step 4 exists.
+
+4)
+Priority: medium.
+Title: correct displaying of data, sorted by option 'Time of transfers' set in 'Morning(06 - 12)'.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. get time of departure and arrival from first flight;
+	5. check results.
+
+Expected results: gotten time from step 4 is correct.
+
+5)
+Priority: medium.
+Title: correct displaying of data, sorted by option 'Time of transfers' set in 'Morning(06 - 12)' and
+by the option 'Number of transfers' set in 'Direct fligth'.
+
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. check for transfers existing;
+	5. check results.
+
+Expected results: transfers do not exist.
+
+
+6)
+Priority: high.
+Title: correct converting of flight prices from BYN to USD.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. press 'BYN' button to perform the convertion;
+	5. get prices of first flight in BYN and USD currency;
+	6. check results.
+
+Expected results: according to current coefficient of conversion(BYN to USD) results from step 5 are correct.
+
+7)
+Priority: medium.
+Title: correct filtering of result data by having a baggage with option 'Without baggage'.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. press button 'Without baggage';
+	5. get baggage availability from first flight;
+	6. check results.
+
+Expected results: baggage availability gotten from step 5 is in value 'Is not available'.
+
+8)
+Priority: high.
+Title: correct converting of flight prices from BYN to EUR.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. press 'EUR' button to perform the convertion;
+	5. get prices of first flight in BYN and EUR currency;
+	6. check results.
+
+Expected results: according to current coefficient of conversion(BYN to EUR) results from step 5 are correct.
+
+9)
+Priority: medium.
+Title: checking that the most cheaper flight from results is really the most cheaper in comparison with others.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. get the most cheaper flight price;
+	5. get the other flight price;
+	6. check results.
+
+Expected results: the most cheaper flight price is less than the other.
+
+10)
+Priority: medium.
+Title: checking for correctly set value of country on booking process page.
+Steps: 
+	1. set departure and arrival cities;
+	2. press search button;
+	3. wait for result page is loaded;
+	4. press button 'Choose' on first flight;
+	5. get country set as value of citizenship input element;
+	6. check results.
+
+Expected results: value of cinizenship input element from step 5 is set to correct country.
